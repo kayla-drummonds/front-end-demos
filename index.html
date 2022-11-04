@@ -1,96 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Document</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+	<body>
+		<div>
+			<h1 id="firstheader">This is the first h1 tag</h1>
+			<h1>This is the second h1 tag</h1>
 
-<body>
-    <div>
-        <h1>Testing this page 1</h1>
-        <h2>Testing this page 2</h2>
-        <h3>Testing this page 3</h3>
-        <h4>Testing this page 4</h4>
-        <p>This is more text for a paragraph
-            <br /><br />
-            This is a new line
-        </p>
-    </div>
-    <div>
-        <span>This is a <strong>bold</strong> span</span>
-        <a href="https://www.google.com" target="_new">text in the link</a>
-        <p>This is a paragraph</p>
-    </div>
-    <div>
-        <ul>
-            <li>First</li>
-            <li>2nd</li>
-            <li>3rd</li>
-        </ul>
-    </div>
-    <table>
-        <thead>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Street</th>
-            <th>City</th>
-            <th>State</th>
-            <th>ZIP Code</th>
-            <th>Major ID</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Guadalupe</td>
-                <td>Donoghue</td>
-                <td>8483 Adams St.</td>
-                <td>Elgin</td>
-                <td>IL</td>
-                <td>60120</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>Raye</td>
-                <td>Selig</td>
-                <td>7731 Jocke Hollow Street</td>
-                <td>Somerset</td>
-                <td>NJ</td>
-                <td>07866</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>Vivien</td>
-                <td>Ragusa</td>
-                <td>35 W. Spring Lane</td>
-                <td>Vienna</td>
-                <td>VA</td>
-                <td>22180</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Georgette</td>
-                <td>Darcy</td>
-                <td>202 A El Dorado St.</td>
-                <td>Rockaway</td>
-                <td>NJ</td>
-                <td>07866</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>Mui</td>
-                <td>Toller</td>
-                <td>814 Nicolles Ave.</td>
-                <td>Cumberland</td>
-                <td>RI</td>
-                <td>02864</td>
-                <td>3</td>
-            </tr>
-        </tbody>
-    </table>
-    This is the footer
-
-</body>
-
+			<h2 id="anything">Testing this page 2</h2>
+			<h3>Testing this page 3</h3>
+			<h4>Testing this page 4</h4>
+			<p>
+				This is more text for a paragraph <br /><br />
+				This is a new line
+			</p>
+		</div>
+		<div class="border-box" style="background-color: rgb(29, 29, 179)">
+			<span>This is an example of padding and margin</span>
+		</div>
+		<div class="border-box">
+			<span>This is a <strong>bold</strong> span</span>
+			<a href="https://www.google.com" target="_new">text in the link</a>
+			<p>This is a paragraph</p>
+		</div>
+		<div>
+			<ul>
+				<li>First</li>
+				<li>2nd</li>
+				<li>3rd</li>
+			</ul>
+		</div>
+		<table class="table-1" border="1px">
+			<thead>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>City</th>
+				<th>Zip</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Michaela</td>
+					<td>Drummonds</td>
+					<td>Columbus</td>
+					<td>43229</td>
+				</tr>
+				<tr>
+					<td>Jessica</td>
+					<td>James</td>
+					<td>Los Angeles</td>
+					<td>90234</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr />
+		<form>
+			<table>
+				<tr>
+					<td>First name</td>
+					<td><input type="text" title="firstName" /></td>
+				</tr>
+				<tr>
+					<td>Last name</td>
+					<td><input type="text" title="lastName" /></td>
+				</tr>
+				<tr>
+					<td>City</td>
+					<td>
+						<select title="cities">
+							<option>Denver</option>
+							<option>New York</option>
+							<option>Chicago</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Age</td>
+					<td>
+						<input type="radio" id="age1" name="age" value="60" title="age1" />
+						<input type="radio" id="age2" name="age" value="30" title="age2" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<button type="submit">Submit</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<hr />
+		<br />
+		<br />
+		<table class="student-table">
+			<thead>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Street</th>
+				<th>City</th>
+				<th>State</th>
+				<th>ZIP Code</th>
+				<th>Major ID</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Guadalupe</td>
+					<td>Donoghue</td>
+					<td>8483 Adams St.</td>
+					<td>Elgin</td>
+					<td>IL</td>
+					<td>60120</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Raye</td>
+					<td>Selig</td>
+					<td>7731 Jocke Hollow Street</td>
+					<td>Somerset</td>
+					<td>NJ</td>
+					<td>07866</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>Vivien</td>
+					<td>Ragusa</td>
+					<td>35 W. Spring Lane</td>
+					<td>Vienna</td>
+					<td>VA</td>
+					<td>22180</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>Georgette</td>
+					<td>Darcy</td>
+					<td>202 A El Dorado St.</td>
+					<td>Rockaway</td>
+					<td>NJ</td>
+					<td>07866</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>Mui</td>
+					<td>Toller</td>
+					<td>814 Nicolles Ave.</td>
+					<td>Cumberland</td>
+					<td>RI</td>
+					<td>02864</td>
+					<td>3</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<br />
+		This is the footer
+	</body>
 </html>
