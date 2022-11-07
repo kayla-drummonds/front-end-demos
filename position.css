@@ -1,0 +1,29 @@
+.absolute {
+	width: 100px;
+	height: 100px;
+	left: 100px;
+	top: 150px;
+	z-index: 1;
+	background-color: red;
+	border: solid1px;
+	border-radius: 100px;
+	position: absolute;
+}
+.relative {
+	width: 150px;
+	height: 200px;
+	background-color: green;
+	position: relative;
+}
+div {
+	display: block;
+}
+
+.fixed {
+	width: 100px;
+	height: 200px;
+	left: 150px;
+	top: 300px;
+	background-color: yellow;
+	position: fixed;
+}
